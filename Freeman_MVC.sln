@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WARSVP", "WARSVP\WARSVP.csproj", "{4431C16B-1B4D-4272-A9A4-EAFCF7055F2E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter2", "Chapter2", "{932B87E8-29F6-40BB-8302-8C025187DFDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter3", "Chapter3", "{B84AD2D8-BB72-425B-83DF-448B1016A90D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4431C16B-1B4D-4272-A9A4-EAFCF7055F2E} = {932B87E8-29F6-40BB-8302-8C025187DFDD}
 	EndGlobalSection
 EndGlobal
