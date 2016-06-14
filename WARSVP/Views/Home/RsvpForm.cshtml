@@ -1,0 +1,36 @@
+﻿@model WARSVP.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/Styles.css" rel="stylesheet" />
+    <title>RsvpForm</title>
+
+</head>
+<body>
+    <div class="panel panel-success">
+        <div class="panel-heading"><h4>RSVP</h4></div>
+        <div class="panel-body">  
+        @using (Html.BeginForm())
+        {
+            <p>@Html.ValidationSummary()</p>
+            <p>Name @Html.TextBoxFor(m => m.Name) @Html.ValidationMessageFor(m => m.Name)</p>
+            <p>email @Html.TextBoxFor(m => m.Email)</p>
+            <p>Name @Html.TextBoxFor(m => m.Phone)</p>
+            <p>Name @Html.DropDownListFor(m => m.WillAttend, new[] {
+               new SelectListItem() { Text = "Yes", Value = bool.TrueString },
+               new SelectListItem() { Text = "No", Value = bool.FalseString }}, "Choose an option") </p>
+            <p><input type="submit" value="Submit RSVP"/></p>
+        }
+        </div>
+    </div>
+</body>
+</html>

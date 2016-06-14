@@ -1,0 +1,20 @@
+﻿@model WARSVP.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+    <h1>Thank you @Model.Name</h1>
+        <h2>@(Model.WillAttend==true?"OK":"No")</h2>
+    </div>
+</body>
+</html>
