@@ -9,6 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter2", "Chapter2", "{93
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter3", "Chapter3", "{B84AD2D8-BB72-425B-83DF-448B1016A90D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter5", "Chapter5", "{2D7C3A35-0693-44D2-B491-44F704804804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WACH5", "WACH5\WACH5.csproj", "{77872822-6249-49C3-852C-C6E9BC677F1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter6", "Chapter6", "{28EEB380-1454-4590-8D7D-117AE04734B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +25,16 @@ Global
 		{4431C16B-1B4D-4272-A9A4-EAFCF7055F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4431C16B-1B4D-4272-A9A4-EAFCF7055F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4431C16B-1B4D-4272-A9A4-EAFCF7055F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77872822-6249-49C3-852C-C6E9BC677F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77872822-6249-49C3-852C-C6E9BC677F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77872822-6249-49C3-852C-C6E9BC677F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77872822-6249-49C3-852C-C6E9BC677F1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4431C16B-1B4D-4272-A9A4-EAFCF7055F2E} = {932B87E8-29F6-40BB-8302-8C025187DFDD}
+		{77872822-6249-49C3-852C-C6E9BC677F1E} = {2D7C3A35-0693-44D2-B491-44F704804804}
 	EndGlobalSection
 EndGlobal
