@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ET.Abstraction;
 
 namespace EssentialTools.Models
 {
-    public class LinqValueCalculator
+    public class LinqValueCalculator:ILinqValueCalculator
     {
-        public decimal ValueProducts(IEnumerable<Product> prdcts)
+        public decimal Calculate(IEnumerable<Product> p)
         {
-            return prdcts.Sum(p => p.Price);
+            return p.Sum(pr=> pr.Price);
         }
     }
 }

@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ET.Abstraction;
 
 namespace EssentialTools.Models
 {
     public class ShoppingCart
     {
-        private LinqValueCalculator cp;
-        public ShoppingCart(LinqValueCalculator calcParam)
+        private ILinqValueCalculator cp;
+        public ShoppingCart(ILinqValueCalculator calcParam)
         {
             cp = calcParam;
         }
@@ -16,7 +17,7 @@ namespace EssentialTools.Models
 
         public decimal CalculateProductTotal()
         {
-            return cp.ValueProducts(Products);
+            return cp.Calculate(Products);
         }
     }
 }
