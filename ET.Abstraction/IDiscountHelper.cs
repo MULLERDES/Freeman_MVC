@@ -28,4 +28,13 @@ namespace ET.Abstraction
             return (totalParam - (discount / 100m * totalParam));
         }
     }
+
+    public class MinimumDiscountHelper : IDiscountHelper
+    {
+        public decimal ApplyDiscount(decimal param)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
+
