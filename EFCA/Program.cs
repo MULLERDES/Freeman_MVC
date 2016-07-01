@@ -12,6 +12,8 @@ namespace EFCA
     {
         static void Main(string[] args)
         {
+            return;
+
             using (UserContext db = new UserContext())
             {
 
