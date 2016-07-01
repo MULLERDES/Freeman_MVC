@@ -31,11 +31,14 @@ namespace SportsStore.WebUI.Controllers
                     ItemsPerPage = PageSize,
                     TotalItems = _productRepository.Products.Count()
                 },
-                Products = _productRepository.Products.Where(w => category == null || w.Category == category).OrderBy(o => o.Id).Skip(PageSize * page).Take(PageSize),
+                Products = _productRepository.Products
+                .Where(w => category == null || w.Category == category)
+                .OrderBy(o => o.Id)
+                .Skip(PageSize * page).Take(PageSize),
                 CurrentCategory = category
             };
             return View(mdl);
-          //  return View(_productRepository.Products.Skip(page * PageSize).Take(PageSize).OrderBy(s => s.Id));
+            //  return View(_productRepository.Products.Skip(page * PageSize).Take(PageSize).OrderBy(s => s.Id));
         }
     }
 }
