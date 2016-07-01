@@ -21,7 +21,7 @@ namespace SportsStore.WebUI.Controllers
 
 
         // GET: Product
-        public ActionResult List(int page = 0)
+        public ActionResult List(string category, int page = 0)
         {
             var mdl = new ProductsListViewModel()
             {
@@ -31,7 +31,8 @@ namespace SportsStore.WebUI.Controllers
                     ItemsPerPage = PageSize,
                     TotalItems = _productRepository.Products.Count()
                 },
-                Products = _productRepository.Products.OrderBy(o => o.Id).Skip(PageSize * page).Take(PageSize)
+                Products = _productRepository.Products.Where(w => category == null || w.Category == category).OrderBy(o => o.Id).Skip(PageSize * page).Take(PageSize),
+                CurrentCategory = category
             };
             return View(mdl);
           //  return View(_productRepository.Products.Skip(page * PageSize).Take(PageSize).OrderBy(s => s.Id));
