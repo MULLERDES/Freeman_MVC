@@ -10,7 +10,7 @@ namespace SportsStore.WebUI.Models
         public int TotalItems { get; set; }
         public int ItemsPerPage { get; set; }
         public int CurrentPage { get; set; }
-        public int MaxLinks { get; set; } = 5;
+        public int MaxLinks { get; set; } = 3;
         public int TotalPages
         {
             get
