@@ -26,10 +26,10 @@ namespace SportsStore.WebUI.Controllers
             return RedirectToAction("Index", new { returnUrl });
         }
 
-        public ActionResult Index(string returnUrl)
+        public ActionResult Index(Cart cart,string returnUrl)
         {
             return View(new CartInfoViewModel() {
-                Cart = CartInSession,
+                Cart = cart,
                 ReturnUrl = returnUrl
             });
         }
