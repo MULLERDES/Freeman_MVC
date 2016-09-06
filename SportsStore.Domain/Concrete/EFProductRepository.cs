@@ -15,7 +15,7 @@ namespace SportsStore.Domain.Concrete
         public EFProductRepository()
         {
             //Very simple object initializer
-            if (context.Products.Count() == 0)
+            if (!context.Products.Any())
                 Initialize();
         }
         public void Initialize()
